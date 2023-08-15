@@ -8,7 +8,7 @@ body{
   border: 2px solid #ccc;
   border-radius: 20px;
   background-color: aliceblue;
-  box-shadow: 0 0 20px cyan;
+  box-shadow: 0 0 10px cyan;
 }
 
 .main-title h3 {

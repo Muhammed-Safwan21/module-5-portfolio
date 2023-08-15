@@ -21,7 +21,7 @@ const App = () => {
      if (cookies.token) {
       setIsAuthenticated(true);
      }
-  }, []);
+  }, [cookies.token]);
   return (
     <ContextValue.Provider value={{ theme, changeTheme,isAuthenticated }} >
       <BrowserRouter >
