@@ -3,12 +3,11 @@ import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { ContextValue } from "../../App";
-import {BsSun, BsMoon} from 'react-icons/bs'
+import { BsSun, BsMoon } from "react-icons/bs";
 import "./HeaderComponent.css";
 
-
 const NavBar = () => {
-  const { theme, changeTheme } = useContext(ContextValue);
+  const { theme, changeTheme, isAuthenticated } = useContext(ContextValue);
 
   return (
     <div className={theme === false ? "header-dark" : "header-light"}>
@@ -19,11 +18,15 @@ const NavBar = () => {
         className="navbar-container"
       >
         <Navbar.Toggle aria-controls="navbar-nav" />
-         <div className="switch-container">
-         <button onClick={changeTheme} className="theme-toggle-button">
-            {theme === false ? <BsSun className="sun-icon" /> : <BsMoon className="moon-icon"/> }
+        <div className="switch-container">
+          <button onClick={changeTheme} className="theme-toggle-button">
+            {theme === false ? (
+              <BsSun className="sun-icon" />
+            ) : (
+              <BsMoon className="moon-icon" />
+            )}
           </button>
-         </div>
+        </div>
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link
@@ -70,15 +73,17 @@ const NavBar = () => {
             >
               Contact
             </Nav.Link>
-            <Nav.Link
-              as={RouterLink}
-              to="/register"
-              duration={500}
-              offset={-70}
-            >
-              Signup/Login
-            </Nav.Link>
-           
+
+            {!isAuthenticated ? (
+              <Nav.Link
+                as={RouterLink}
+                to="/register"
+                duration={500}
+                offset={-70}
+              >
+                Signup/Login
+              </Nav.Link>
+            ) : null}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
