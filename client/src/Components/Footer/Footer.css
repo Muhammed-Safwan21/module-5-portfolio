@@ -1,0 +1,38 @@
+.footer-dark {
+  background-color: #111827;
+  color: antiquewhite;
+}
+.footer-dark .footer p {
+  text-align: center;
+  color: white;
+}
+.footer-dark .footer a svg {
+  color: cyan;
+}
+.footer-dark .footer a svg:hover{
+   transform: scale(1.1); 
+}
+.footer-light {
+  background-color: aliceblue;
+  color: #111827;
+}
+.footer-light .footer p {
+  text-align: center;
+  color: #111827;
+}
+.footer-light .footer a svg {
+  color:#3a0ca3;
+}
+.footer-light .footer a svg:hover {
+  transform: scale(1.1);
+}
+.portfolio-footer {
+  padding: 1rem;
+}
+
+.footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+

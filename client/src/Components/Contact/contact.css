@@ -1,0 +1,53 @@
+.contact-dark {
+  background-color: #111827;
+  color: antiquewhite;
+}
+.contact-light {
+  background-color: aliceblue;
+  color: #111827;
+}
+.title{
+  text-align: center;
+}
+.contact-dark .title span{
+  color: cyan;
+}
+.contact-light .title span{
+  color: #3a0ca3;
+}
+.contact-dark .content-section h3{
+  color: cyan;
+}
+.contact-light .content-section h3{
+  color: #3a0ca3;
+}
+.form-control:focus {
+  box-shadow: 0 0 10px cyan !important;
+}
+.contact-light .form-control:focus {
+  box-shadow: 0 0 10px #3a0ca3 !important;
+}
+.contact-dark .submit-button {
+  margin-top: 20px;
+  box-shadow: 0 0 4px cyan;
+  
+}
+.contact-light .submit-button{
+  margin-top: 20px;
+  box-shadow: 0 0 10px #3a0ca3;
+  border: 1px solid #3a0ca3 !important;
+  color: #3a0ca3 !important;
+}
+.contact-dark .submit-button:hover{
+  box-shadow: 0 0 20px cyan;
+}
+.contact-light .submit-button:hover{
+  color: white !important;
+  background-color: #3a0ca3 !important;
+  box-shadow: 0 0 20px #3a0ca3;
+}
+@media (max-width: 401px) {
+  #email {
+    word-wrap: break-word;
+  }
+}

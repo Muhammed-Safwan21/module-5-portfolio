@@ -1,0 +1,83 @@
+.skill-dark {
+  background-color: #111827;
+  color: antiquewhite;
+}
+.skill-light {
+  background-color: aliceblue;
+  color: #111827;
+}
+.title-column h1 {
+  text-align: center;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1s;
+  margin-top: 20px;
+}
+.skill-dark .title-column span{
+  color: cyan;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1s;
+}
+.skill-light .title-column span{
+  color: #3a0ca3;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1s;
+}
+.skills-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
+  
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 14px;
+}
+.skill-icon {
+  margin-right: 15px;
+}
+.skill-icon:hover {
+  transform: scale(1.1); 
+}
+
+#github-icon {
+  height: 100px;
+  width: 100px;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+
+.skill-name {
+margin-right: 10px !important;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

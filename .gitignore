@@ -1,0 +1,5 @@
+# Ignore files in the frontend
+/client/.gitignore
+
+# Ignore files in the backend
+/backend/.gitignore

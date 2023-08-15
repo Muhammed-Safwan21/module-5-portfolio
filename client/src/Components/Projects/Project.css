@@ -1,0 +1,120 @@
+.project-dark {
+  background-color: #111827;
+  color: antiquewhite;
+}
+.project-dark .project-links a {
+  text-decoration: none;
+  color: white;
+}
+.project-dark .project-links a:hover {
+  color: cyan;
+}
+.project-light {
+  background-color: aliceblue;
+  color: #111827;
+}
+.project-light .project-links a {
+  text-decoration: none;
+  color: #111827;
+}
+.project-light .project-links a:hover {
+  color: #7d8088;
+}
+.project-container {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.project-dark #main-heading{
+  margin-bottom: 40px;
+  text-align: center;
+  color: cyan;
+}
+.project-light #main-heading{
+  margin-bottom: 40px;
+  text-align: center;
+  color:#3a0ca3;
+}
+.project-dark .title {
+  padding: 20px;
+  color: cyan;
+}
+.project-light .title {
+  padding: 20px;
+  color: #3a0ca3;
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: rgb(185, 183, 183);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(185, 183, 183);;
+}
+.project-light .project-image{
+  background-color:rgb(195, 231, 243);
+}
+
+.project-image img {
+  object-fit: contain;
+  max-width: 100%;
+}
+.project-description {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.project-links {
+  display: flex;
+}
+.project-tools{
+  display: flex;
+  flex-direction: row;
+ 
+}
+.project-dark .tool-box{
+  color: #3a0ca3;
+}
+.project-light .tool-box{
+  background-color:rgb(195, 231, 243);
+  color: #3a0ca3;
+
+}
+.tool-box{
+  display: flex;
+  overflow: auto;
+  background-color: rgb(199, 197, 197);
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px rgb(70, 67, 67) solid;
+}
+.tool{
+  padding:2px 8px;
+}
+
+.github-link {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .project-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-links {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 409px) {
+
+    .project-tools{
+       display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      }
+  
+}
