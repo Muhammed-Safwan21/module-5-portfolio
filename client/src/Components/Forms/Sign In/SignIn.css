@@ -1,79 +1,73 @@
 /* SignIn.css */
-body{
-    margin: 0;
-    padding: 0;
-    background-size: cover;
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
 }
 .form-container1 {
+  max-width: 370px;
+  margin: 100px auto;
+  background-color: aliceblue;
+  padding: 20px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 0 20px cyan;
+}
+.main-title {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #007bff;
+  font-weight: bolder;
+}
 
-    max-width: 370px;
-    margin:100px auto;
-    background-color:aliceblue;
-    padding: 20px;
-    border: 3px solid #ccc;
-    border-radius: 20px;
-    
-  }
-.main-title{
-    margin-top: 10px;
-    text-align: center;
-    margin-bottom: 25px;
-    color: #007bff;
-    font-weight: bolder;
-  }
-  
-  .form-label {
-    font-weight: 500;
-  }
-  
-  .form-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .signIn-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    
-  }
-  .error-message{
-    margin-bottom: 5px;
-    text-align: center;
-    color: red;
-  }
-  .signIn-button:hover {
-    background-color: #0056b3;
-    
-  }
-  
- .links-container a{
-    text-decoration: none;
-    color: rgb(19, 129, 224);
-    cursor: pointer;
-  }
-  .links-container {
-    display: flex;
-    justify-content: space-between;
-    color: rgb(19, 129, 224);
-    cursor: pointer;
-  }
+.form-label {
+  font-weight: 500;
+}
 
-  @media (max-width:401px) {
-    .container {
-        max-width: 280px;
-    
-      }
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-    
+.signIn-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.error-message {
+  margin-bottom: 5px;
+  text-align: center;
+  color: red;
+}
+.signIn-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 5px #0056b3;
+}
+
+.links-container a {
+  text-decoration: none;
+  color: rgb(19, 129, 224);
+  cursor: pointer;
+}
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(19, 129, 224);
+  cursor: pointer;
+}
+
+@media (max-width: 401px) {
+  .container {
+    max-width: 280px;
   }
-  
+}
